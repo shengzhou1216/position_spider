@@ -36,8 +36,10 @@ setup_logging()
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 baseUrl = 'https://www.lagou.com/jobs/positionAjax.json?needAddtionalResult=false'
 
-cookie = 'JSESSIONID=ABAAAECAAEBABII236533B72AD04387C58BBAEF92E48242; WEBTJ-ID=20210217134011-177ae80c802768-0b9786c38f28ee-4353760-1327104-177ae80c803836; RECOMMEND_TIP=true; index_location_city=%E5%85%A8%E5%9B%BD; sajssdk_2015_cross_new_user=1; sensorsdata2015session=%7B%7D; user_trace_token=20210217134024-93d7808b-ed6c-423c-91a6-3cec94d15e25; __lg_stoken__=59ac34ae6495c7995a689a9594aba0e1c3a8fc28ae5fd8b1cfa652e416b4c6017a05db450e4a62a6fda84cf0558ba4c7c31f1aeb8e809ddad9ae6148434a87cf688bbe5268c9; X_MIDDLE_TOKEN=8140b4a55171a02ac6df637b78a5e073; _ga=GA1.2.1994363303.1613540446; _gid=GA1.2.846640884.1613540446; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1613194655,1613540446; LGUID=20210217134052-98a3f5ba-a88b-4224-b3f0-44f302723294; TG-TRACK-CODE=search_code; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22177ae80fbe562f-053cfdc37d7cad-4353760-1327104-177ae80fbe6557%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%2C%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24browser_version%22%3A%2283.0.4103.116%22%7D%2C%22%24device_id%22%3A%22177ae80fbe562f-053cfdc37d7cad-4353760-1327104-177ae80fbe6557%22%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1613545674; LGRID=20210217154341-63de2e9c-45d6-4143-9858-16b293f64196; X_HTTP_TOKEN=d1ad9a02ec4599c997605531616a97fc359620de80; SEARCH_ID=fa69bb704b3048d4a77c641af2a1ecce'
+cookie = 'user_trace_token=20210219115644-bb71ccd2-85c4-499d-8e4e-6f774d97da1a; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22177b86ecfec426-00f581605e814d8-7d21675c-1648656-177b86ecfed950%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24os%22%3A%22UNIX%22%2C%22%24browser%22%3A%22Firefox%22%2C%22%24browser_version%22%3A%2293.0%22%7D%2C%22%24device_id%22%3A%22177b86ecfec426-00f581605e814d8-7d21675c-1648656-177b86ecfed950%22%7D; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1634177353; _ga=GA1.2.1909959156.1613707006; LGUID=20210219115645-c321d6a2-7fd8-4dbe-a450-6a291bac893c; X_HTTP_TOKEN=aaded26f5dbc377a1347714361770349f116989208; LGSID=20211014100912-2358efed-9267-42b6-8e83-c33c9e7d1b50; PRE_UTM=; PRE_HOST=; PRE_SITE=; PRE_LAND=https%3A%2F%2Fwww.lagou.com%2F; LGRID=20211014101032-1c7e1595-2f79-47fe-9e6b-8b1a025853e3; _gat=1; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1634177432; sensorsdata2015session=%7B%7D; privacyPolicyPopup=false; _gid=GA1.2.1076171072.1634177354; index_location_city=%E5%85%A8%E5%9B%BD; __lg_stoken__=9942b6dc105abc0a226ac271bc021815dffab8fdc56c874d674b8a477dcdbc3a92cdb060a9199bec9799756dac09ef92add06c9ea842effceb1aea618efb2717957ea6094c08'
+
 detail_cookie = 'JSESSIONID=ABAAAECAAEBABIIC9C5A9035A7ECD679762399A58FE53FF; WEBTJ-ID=02192021%2C105533-177b836c77c9b5-01282c63719253-1e2e1b0b-1648656-177b836c77d1278; RECOMMEND_TIP=true; index_location_city=%E5%85%A8%E5%9B%BD; sensorsdata2015session=%7B%7D; _ga=GA1.2.1138532040.1613703338; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1613703339; user_trace_token=20210219105539-1935529d-b94d-498e-95c5-bcfc7137596f; LGUID=20210219105539-145370ca-0fa4-4478-af62-ab1687935f5a; __lg_stoken__=64f0ec0b3d36153bd482389b49cdd0ada7b0012a22b664fa9e30d2655005dcf803cf5462b480f88ce32e2c3a62a9f75f2ee7e8cf44cc8d62bf33400d0cea2df2ad7267f48ae2; X_MIDDLE_TOKEN=158eec6a338fdef4dc11990b47ed3ca6; TG-TRACK-CODE=search_code; _gid=GA1.2.1562694723.1613793617; PRE_UTM=; PRE_HOST=; PRE_LAND=https%3A%2F%2Fwww.lagou.com%2Fjobs%2F7977723.html; LGSID=20210220120019-523d6559-e25b-4c09-83d4-68dbbfbef1ff; PRE_SITE=; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22177b836d83330a-0bccbaae45d1b7-1e2e1b0b-1648656-177b836d8341e8%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24os%22%3A%22UNIX%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24browser_version%22%3A%2287.0.4280.88%22%7D%2C%22%24device_id%22%3A%22177b836d83330a-0bccbaae45d1b7-1e2e1b0b-1648656-177b836d8341e8%22%7D; _gat=1; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1613793791; LGRID=20210220120313-29080882-f07b-409e-a8a0-61bb809e8310; X_HTTP_TOKEN=eb64c8059176738a8183973161f2d27565626be941'
+
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:79.0) Gecko/20100101 Firefox/79.0',
     'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -56,13 +58,14 @@ detail_headers = {
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'referer': 'https://www.lagou.com/utrack/trackMid.html?f=https%3A%2F%2Fwww.lagou.com%2Fjobs%2F7977723.html&t=1613793639&_ti=3'
 }
+
 proxies = {
     # 'http': 'socks5://127.0.0.1:1080'
 }
 
 
 def start():
-    query('前端工程师')
+    query('Golang')
 
 
 def query(q):
@@ -100,7 +103,7 @@ def query(q):
         insert_lagou_positions(result)
         # with open('lagou.json','w+',encoding='utf8') as f:
         #     f.write(json.dumps(result))
-        wait_times = random.randint(10, 30)
+        wait_times = random.randint(5, 10)
         logging.info('wait_times:%d then continue get position', wait_times)
         time.sleep(wait_times)
 
@@ -110,40 +113,45 @@ def do_process_positions():
         process_positions()
     except IndexError as e:
         logging.exception(e)
-        wait_times = random.randint(60,120)
-        logging.info('wait %d seconds,then continue process positions.',wait_times)
+        wait_times = random.randint(60, 120)
+        logging.info(
+            'wait %d seconds,then continue process positions.', wait_times)
         time.sleep(wait_times)
         do_process_positions()
     except Exception as e:
         logging.exception(e)
     logging.info('done processing')
 
+
 def process_positions():
     positions = lagou.find({'detail': {'$exists': False}})
     count = lagou.count_documents({'detail': {'$exists': False}})
-    logging.info("positions count:%d",count)
+    logging.info("positions count:%d", count)
     for p in positions:
         positionId = p['positionId']
         detail = get_detail_of_positon(positionId)
         p['detail'] = detail
-        db.lagou.update_one({'positionId': positionId},{'$set': {'detail': detail}})
+        db.lagou.update_one({'positionId': positionId}, {
+                            '$set': {'detail': detail}})
         time.sleep(random.randint(10, 60))
 
 
 def get_detail_of_positon(positionId):
     position_url = 'https://www.lagou.com/jobs/%s.html' % positionId
-    logging.info('positon_url:%s',position_url)
+    logging.info('positon_url:%s', position_url)
     r = requests.get(position_url, headers=detail_headers, verify=False)
     print(r.text)
-    soup = BeautifulSoup(r.text,'lxml')
+    soup = BeautifulSoup(r.text, 'lxml')
     return soup.select('.job-detail')[0].get_text()
 
 
 def store_to_file():
-    details = db.lagou.find({'detail':{'$exists': True}},{'detail': 1,'_id':False})
-    with open('lagou.txt','w',encoding='utf8') as f:
+    details = db.lagou.find(
+        {'positionDetail': {'$exists': True}, '$or': {'positionName': {'$regex': 'Go'}, 'thirdType': {'$regex': 'Go'}}})
+    with open('lagou.txt', 'w', encoding='utf8') as f:
         for d in details:
-            f.write(d['detail'])        
+            f.write(d['positionDetail'])
+
 
 if __name__ == '__main__':
     # start()

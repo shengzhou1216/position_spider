@@ -1,6 +1,26 @@
 # -*- coding: utf-8 -*-
 from pymongo import MongoClient
 from pymongo.message import delete
+import logging
+import yaml
+import os
+
+
+def setup_logging(default_path="logging.yaml", default_level=logging.INFO, env_key='LOG_CFG'):
+    path = default_path
+    value = os.getenv(env_key, None)
+    if value:
+        path = value
+    if os.path.exists(path):
+        with open(path, 'rt') as f:
+            config = yaml.safe_load(f.read())
+        logging.config.dictConfig(config)
+    else:
+        logging.basicConfig(format='%(asctime)s %(message)s',
+                            datefmt='%m/%d/%Y %I:%M:%S %p', filename='example.log', level=default_level)
+
+
+setup_logging()
 
 client = MongoClient('localhost', 27017)
 db = client.position
@@ -31,6 +51,7 @@ def insert_lagou_positions(v):
     r = []
     for p in v:
         if p['positionId'] in lagou_positionids:
+            logging.info("positionId:%s already exists.", p['positionId'])
             continue
         r.append(p)
         lagou_positionids.append(p['positionId'])

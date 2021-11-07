@@ -4,8 +4,17 @@ import os
 from os import path
 from wordcloud import WordCloud
 import jieba
+import json
 
-text = open('lagou.txt').read()
+output_file = 'golang.jpg'
+file = 'golang.txt'
+with open('golang.json','r', encoding='utf8') as f:
+    results = json.load(f)
+    results = [x['desc'] for x in results]
+    with open(file,'w',encoding='utf8') as f:
+        f.writelines(results)
+
+text = open(file,encoding='utf-8').read()
 
 # seg_list = jieba.cut(text)
 
@@ -22,7 +31,8 @@ with open('custom_stopwords.txt',encoding='utf-8') as f:
         stopwords.append(l.strip('\n'))
 
 chtext = ''
-with open('lagou.txt',encoding='utf-8') as f:
+
+with open(file,encoding='utf-8') as f:
     for l in f.readlines():
         # l = l.strip('\n').replace('/','').replace('，','').replace(',','').replace('.','').replace('、','').replace(';','').replace('；','').replace('。','').replace(':','').replace('：','').replace('1','').replace('2','').replace('3','').replace('4','').replace('5','').replace('6','').replace('7','').replace('8','').replace('9','').replace('10','').replace('0','')
         chtext += ' '.join([word for word in jieba.cut(l) if word not in stopwords])
@@ -39,6 +49,6 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.figure()
 
-wordcloud.to_file('lagou.jpg')
+wordcloud.to_file(output_file)
 
 
